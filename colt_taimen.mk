@@ -29,3 +29,8 @@ BUILD_FINGERPRINT := google/taimen/taimen:10/QQ2A.200501.001.B3/6396602:user/rel
 
 $(call inherit-product-if-exists, vendor/google/taimen/taimen-vendor.mk)
 $(call inherit-product-if-exists, vendor/gapps/gapps.mk)
+
+REMOVE_GAPPS_PACKAGES += \
+	PrebuiltGmail \
+	MatchmakerPrebuiltPixel4 \
+	WellbeingPrebuilt
